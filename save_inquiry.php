@@ -54,7 +54,8 @@
                                   VALUES (:name, :email, :phone, :subject, :message, NOW())");
     
       $query->execute(array("name" => $name, "email" => $email, "phone" => $phone, "subject" => $subject, "message" => $message));
-      echo "SUCCESS";
+      echo json_encode("Thanks for contacting us!
+                       A represntative should be contacting you in the next 1 - 3 business days.");
       
       //Send email with inquiry information if data insert was successfully
      /* $to = $testEmail;
