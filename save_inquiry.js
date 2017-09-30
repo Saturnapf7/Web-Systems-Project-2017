@@ -12,18 +12,27 @@ $(function() {
       url: "PHP/save_inquiry.php",
       data: contactForm.serialize(),
       success: function(result) {
-      console.log(result);
+       //Turn the result into an object
+        result = JSON.parse(result);
+        //Get the number of values in the object
+        var resultLength = Object.values(result).length;
         
-        //Iterate through the JSON result and place errors next to the appropriate field
-       /* $.each(result, function(k,v) {
-          var errorMsg = "<label for='" + k + "'class='form-error'>" + v + "</label>";
-          $("input[name='" + k + "']").addClass("input-error").after(errorMsg);
-        });*/
+        //If the array isn't empty, iterate through the JSON object and place errors next to the appropriate field
+        if (resultLength <= 4) {
+          $.each(result, function(k,v) {
+            var errorMsg = "<label for='" + k + "'class='form-error'>" + v + "</label>";
+            $("input[name='" + k + "']").addClass("input-error").after(errorMsg);
+          });
+        }
+        else
+        {
+          //Display success message
+          submit.before(result);
+        }
       }
     });
   });
 });
-
 /**
  *
  *resetErrors()
