@@ -13,39 +13,60 @@
     
     //Intialize errrors array
     $errors['errors'] = array();
-  
-    if (empty($name))
-    {
-      $errors['errors']['name'] = "Name can't be empty";
-    }
-    if (empty($email))
-    {
-      $errors['errors']['email'] = "Email can't be empty";
-    }
-    if (empty($phone))
-    {
-      $errors['errors']['phone'] = "Phone can't be empty";
-    }
-    if (empty($subject))
-    {
-      $errors['errors']['subject'] = "Subject can't be empty";
-    }
-    
-    if (count($errors['errors']) > 0)
-    {
-      echo json_encode($errors['errors']);
-      exit;
-    }
     
     $data = array($name, $email, $phone, $subject, $message);
     
     //Santize all form data
     foreach($data as $d)
     {
-      sanitizeInput($d);
+      $d = sanitizeInput($d);
     }
     
     //Validate form data
+    if (empty($name))
+    {
+      $errors['errors']['name'] = "Name can't be empty";
+    }
+    elseif (strlen($name) < 2)
+    {
+      $errors['errors']['name'] = "Name must be at least 2 characters";
+    }
+    if (empty($email))
+    {
+      $errors['errors']['email'] = "Email can't be empty";
+    }
+    elseif(!validateEmail($email))
+    {
+      $errors['errors']['email'] = "Email address is invalid. Please enter a valid address e.g, 'example@email.com'";
+    }
+    if (empty($phone))
+    {
+      $errors['errors']['phone'] = "Phone can't be empty";
+    }
+    elseif (!validatePhone($phone))
+    {
+      $errors['errors']['phone'] = "Phone wrong format";
+    }
+    else
+    {
+      //Set phone number equal to value containing digits only
+      $phone = validatePhone($phone);
+    }
+    if (empty($subject))
+    {
+      $errors['errors']['subject'] = "Subject can't be empty";
+    }
+    else if (strlen($subject) < 5)
+    {
+      $errors['errors']['subject'] = "Subject must be at least 5 characters";
+    }
+    
+    //Displays errors if array isn't empty
+    if (count($errors['errors']) > 0)
+    {
+      echo json_encode($errors['errors']);
+      exit;
+    }
     
     //Insert the data into the database
     try
@@ -55,7 +76,7 @@
     
       $query->execute(array("name" => $name, "email" => $email, "phone" => $phone, "subject" => $subject, "message" => $message));
       echo json_encode("Thanks for contacting us!
-                       A represntative should be contacting you in the next 1 - 3 business days.");
+                       A representative should be contacting you in the next 1 - 3 business days.");
       
       //Send email with inquiry information if data insert was successfully
      /* $to = $testEmail;
@@ -80,6 +101,7 @@
       echo $e->getMessage();
     }
   }
+  
   /**
    * sanitizeInput()
    *
@@ -94,24 +116,37 @@
     return $input;
   }
   
-  function validateInput($input)
-  {
-    
-  }
-  
+  /**
+   * validateEmail()
+   *
+   * Checks if email address is in a valid format
+   *
+   */
   function validateEmail($email)
   {
-    if (validateInput($email))
+    $emailRegex = "/^[^@\s]+@[^@\s]+\.[^@\s]+$/";
+    if (preg_match($emailRegex, $email))
     {
-      
+      return true;
     }
+    return false;
   }
   
+  /**
+   * validatePhone()
+   *
+   * Checks if phone number is in a valid format
+   *
+   */
   function validatePhone($phone)
   {
-    if (validateInput($phone))
-    {
-      
-    }
+    //Remove every character besides numbers
+     $numbersOnly = preg_replace("/\D/","",$phone);
+   
+     if (strlen($numbersOnly) == 10)
+     {
+      return $numbersOnly;
+     }
+     return false;     
   }
 ?>
