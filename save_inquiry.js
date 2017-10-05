@@ -9,7 +9,7 @@ $(function() {
     //Make a call to ajax to error check the form and submit if no errors
     $.ajax({
       type: "POST",
-      url: "PHP/save_inquiry.php",
+      url: "save_inquiry.php",
       data: contactForm.serialize(),
       success: function(result) {
        //Turn the result into an object
