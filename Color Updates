@@ -1,0 +1,26 @@
+ .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #12C5FC;
+  }
+  
+  footer .glyphicon {
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: #FF0000;
+  }
+  
+  .carousel-indicators li.active {
+      background-color: #FF0000;
+  }
+  
+  .navbar {
+      margin-bottom: 0;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+	  padding-left: 200px;
+  }
