@@ -79,7 +79,7 @@
                        A representative should be contacting you in the next 1 - 3 business days.");
       
       //Send email with inquiry information if data insert was successfully
-     /* $to = $testEmail;
+     $to = $testEmail;
       $subject = "Customer Inquiry - $subject";
       $body = "Name: $name<br>" .
               "Email: $email<br>" .
@@ -94,7 +94,7 @@
       else
       {
         echo "There was a problem sending the email";
-      }*/
+      }
     }
     catch (PDOException $e)
     {
