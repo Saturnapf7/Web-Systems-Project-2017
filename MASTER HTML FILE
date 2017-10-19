@@ -44,7 +44,7 @@
 		<img src="LOGO.png" class="img-responsive" style="width:500px;height:200px;position:center;" alt="Image">
 	</div>
 	<div class="col-sm-4 col-md-offset-0">
-		<h1 style="color: #404040; font-family: Impact;font-size: 75px;">CALL: <br> 123-456-7899</h1>
+		<h1 style="color: #404040; font-family: Impact;font-size: 75px;">CALL: <br> 770.361.2062</h1>
 	</div>
 	</div>
 </div>
@@ -66,19 +66,19 @@
 	<center>
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-         <img src="http://www.jiffywindowwashers.com/wp-content/uploads/2015/07/2013-van-house.jpg" class="img-responsive" style="width:2000px;height:900px;" alt="Image">
+         <img src="House1.jpg" class="img-responsive" style="width:100%" alt="Image">
       </div>
       <div class="item">
-        <img src="http://www.kevinandamanda.com/whatsnew/wp-content/uploads/2012/10/new-house-1.jpg" class="img-responsive" style="width:20000px;height:900px;" alt="Image">
+        <img src="House2.jpg" class="img-responsive" style="width:100%" alt="Image">
       </div>
       <div class="item">
-        <img src="http://weknowyourdreams.com/images/house/house-05.jpg" class="img-responsive" style="width:2000px;height:900px;" alt="Image">
+        <img src="House3.jpg" class="img-responsive" style="width:100%" alt="Image">
       </div>
 	  <div class="item">
-        <img src="http://resources.phrasemix.com/img/full/suburban-houses.jpg" class="img-responsive" style="width:2000px;height:900px;" alt="Image">
+        <img src="House4.jpg" class="img-responsive" style="width:100%" alt="Image">
       </div>
 	  <div class="item">
-        <img src="https://static.pexels.com/photos/277667/pexels-photo-277667.jpeg" class="img-responsive" style="width:2000px;height:900px;" alt="Image">
+        <img src="House5.jpg" class="img-responsive" style="width:100%" alt="Image">
       </div>
     </div>
 	</center>
@@ -99,23 +99,48 @@
 <div id="about" class="about">
 <div class="container-fluid">
 	<h1 style="color: #12C5FC; text-align: center; font-size:75px;">ABOUT US</h1>
-  
+	<div class="about2">
+	 As a family owned and operated business, Grizzle Heating and Air LLC. has been proudly providing 
+	professional heating and cooling services to homeowners throughout the north Georgia area. With highly
+	qualified technicians, we ensure every job is done right. Grizzle Heating and Air LLC has the right 
+	solution for your new equipment installations, regular maintenance, and emergency repairs. We have 
+	earned our positive reputation by doing the job right. Our goal is to earn your business with upfront 
+	no hassle pricing and quality service. We offer weekend and evening service for your year round comfort. 
+	You can count on Grizzle Heating and Air LLC. We look forward to serving you!
+	</div> 
 </div>
 </div>
 
 <!-- Container (Services Section) -->
 <div id="services" class="services">
+<div class="services2">
 <div class="container-fluid">
+
+	<div class="test">
 	<h1 style="color: #FFFFFF; text-align: center; font-size:75px;">SERVICES</h1>
+	
+		<div class="services-floating">Floating box</div>
+		<div class="services-floating">Floating box</div>
+		<div class="services-floating">Floating box</div>
+		<div class="services-floating">Floating box</div>
+		<div class="services-floating">Floating box</div>
+		<div class="services-floating">Floating box</div>
+	</div>
  
+</div>
 </div>
 </div>
 
 <!-- Container (Maintenace Agreement Section) -->
 <div id="agreement" class="agreement">
+<div class="agreement2">
 <div class="container-fluid text-center">
 	<h1 style="color: #FFFFFF; text-align: center; font-size:75px;">MAINTENANCE AGREEMENT</h1>
+	
+	<div class="agreement-floating">Floating box</div>
+	<div class="agreement-floating">Floating box</div>
  
+</div>
 </div>
 </div>
 
@@ -137,7 +162,7 @@
       <p>For more information regarding an appointment or questions, please contact:</p>
       <p><span class="glyphicon glyphicon-map-marker"></span>   86 Mountain Ivy Ct. Jasper, Ga 30143</p>
       <p><span class="glyphicon glyphicon-phone"></span>   770.361.2062</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>   info@mysite.com</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>   tommy@grizzleair.net</p>
     </div>
      <div class="col-sm-7 slideanim">
       <div class="row">
