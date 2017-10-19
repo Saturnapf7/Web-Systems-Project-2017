@@ -28,6 +28,9 @@ $(function() {
         {
           //Display success message
           submit.before(result);
+          
+          //Reset form
+          contactForm.trigger('reset');
         }
       }
     });
