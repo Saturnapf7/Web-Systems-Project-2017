@@ -75,31 +75,31 @@
                                   VALUES (:name, :email, :phone, :subject, :message, NOW())");
     
       $query->execute(array("name" => $name, "email" => $email, "phone" => $phone, "subject" => $subject, "message" => $message));
-      echo json_encode("Thanks for contacting us!
-                       A representative should be contacting you in the next 1 - 3 business days.");
       
       //Send email with inquiry information if data insert was successfully
-     /* $to = $testEmail;
-      $subject = "Customer Inquiry - $subject";
-      $body = "Name: $name<br>" .
-              "Email: $email<br>" .
-              "Phone: $phone<br><br><br>" . $message;
+      $to = $testEmail;
+      $esubject = "Customer Inquiry - $subject";
+      $body = "Name: $name" .
+              "Email: $email" .
+              "Phone: $phone" . $message;
       $header = "From: Grizzle Inquiry";
       
       // mail(to, subject, body, header)
-      if (mail($to, $subject, $body, $header))
+      if (mail($to, $esubject, $body))
       {
-        echo "A confirmation email has been sent to <a href='#'>" . $testEmail . "</a>";
+        echo json_encode("Thanks for contacting us!
+                       A representative should be contacting you in the next 1 - 3 business days.");
       }
       else
       {
-        echo "There was a problem sending the email";
-      }*/
+        echo json_encode("There was a problem sending the email");
+      }
     }
     catch (PDOException $e)
     {
       echo $e->getMessage();
     }
+    
   }
   
   /**
