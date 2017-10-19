@@ -11,8 +11,9 @@ p {
   }  
   .about2{
 	    margin: auto;
-		width: 60%;
-		border: 3px solid #E0E0E0;
+		width: 75%;
+		border: 7px solid #E0E0E0;
+		border-radius: 25px;
 		padding: 25px;
 		font-size:25px;
 		color: #303030;
@@ -27,9 +28,7 @@ p {
 		background-size: cover;
   }  
   .services2 {
-		background-color: rgba(18, 197, 252, 1);
-		opacity: 0.75;
-		filter: alpha(opacity=50);
+		background-color: rgba(18, 197, 252, 0.5);
   }
   .services-floating {
 		float: left;
@@ -38,7 +37,11 @@ p {
 		width: 500px;
 		height: 250px;
 		margin: 25px;
-		border: 3px solid #73AD21;
+		padding: 25px;
+		background-color: #1d65a5;
+		color: #FFFFFF;
+		opacity: 0.75;
+		border-radius: 25px;
   }
   .agreement {
 		background-image: url('HVAC1.jpg');
@@ -49,9 +52,7 @@ p {
 		background-size: cover;
   }
   .agreement2{
-		background-color: rgba(255, 0, 0, 1);
-		opacity: 0.5;
-		filter: alpha(opacity=50);
+		background-color:rgba(255,0,0,0.3);
   }
   .agreement-floating {
 		float: left;
@@ -60,11 +61,14 @@ p {
 		width: 750px;
 		height: 500px;
 		margin: 25px;
-		border: 3px solid #73AD21;
+		padding: 25px;
+		background-color: #911002;
+		color: #FFFFFF;
+		opacity: 0.75;
+		border-radius: 25px;
   }
   .test{
-		opacity: 1.0;
-		filter: alpha(opacity=50);
+		
   }
   .reviews {
 		background-color: #FFFFFF;
