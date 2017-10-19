@@ -5,135 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="GrizzleCSS.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  p {
-      color: #303030;
-      font-weight: 600;
-  }
-  h1 {
-      color: #303030;
-      font-weight: 600;
-  } 
-  .about {
-		background-color: #FFFFFF;
-  }  
-  .services {
-		background-color: #12C5FC;
-  }  
-  .agreement {
-		background-color: #FF0000;
-  }  
-  .reviews {
-		background-color: #FFFFFF;
-  }  
-  .contact {
-		background-color: #E0E0E0;
-  } 
-  .slideshow {
-		background-color: #FFFFFF;
-  }  
-  .jumbotron {
-	  background-color: #FFFFFF;
-      color: #fff;
-      padding: 70px 0px 0px 0px;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #12C5FC;
-  }
-  .carousel-indicators li {
-      border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-      background-color: #FF0000;
-  }
-  .navbar {
-      margin-bottom: 0;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-  .navbar .navbar-nav {
-	  display: inline-block;
-      float: none;
-      vertical-align: top;
-  }
-
-  .navbar .navbar-collapse {
-	  text-align: center;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #FF0000 !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #12C5FC!important;
-      background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
-  footer .glyphicon {
-      font-size: 50px;
-      margin-bottom: 20px;
-      color: #FF0000;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  }
-  </style>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <!-- Nav Bar -->
