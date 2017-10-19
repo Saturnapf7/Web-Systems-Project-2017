@@ -4,8 +4,10 @@ $(function() {
 
   submit.on("click", function(e) {
     resetErrors();
+    
     //Prevent the form from submitting
     e.preventDefault();
+    
     //Make a call to ajax to error check the form and submit if no errors
     $.ajax({
       type: "POST",
@@ -14,11 +16,13 @@ $(function() {
       success: function(result) {
        //Turn the result into an object
         result = JSON.parse(result);
+        
         //Get the number of values in the object
         var resultLength = Object.values(result).length;
         
         //If the array isn't empty, iterate through the JSON object and place errors next to the appropriate field
-        if (resultLength <= 4) {
+        if (resultLength <= 4)
+        {
           $.each(result, function(k,v) {
             var errorMsg = "<label for='" + k + "'class='form-error'>" + v + "</label>";
             $("input[name='" + k + "']").addClass("input-error").after(errorMsg);
@@ -26,13 +30,17 @@ $(function() {
         }
         else
         {
-          //Display success message
-          submit.before(result);
+         var successMsg = $("<p>" + result + "</p>");
           
-          //Reset form
-          contactForm.trigger('reset');
-        }
-      }
+        //Display success message
+        submit.before(successMsg);
+
+        //Fade the success message out
+        successMsg.fadeOut(5000, "linear");
+
+        //Reset form fields
+        contactForm.trigger('reset');
+    }
     });
   });
 });
