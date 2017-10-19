@@ -97,59 +97,61 @@
 
 <!-- Container (About Section) -->
 <div id="about" class="about">
-<div class="container-fluid">
-	<h1 style="color: #12C5FC; text-align: center; font-size:75px;">ABOUT US</h1>
-	<div class="about2">
-	 As a family owned and operated business, Grizzle Heating and Air LLC. has been proudly providing 
-	professional heating and cooling services to homeowners throughout the north Georgia area. With highly
-	qualified technicians, we ensure every job is done right. Grizzle Heating and Air LLC has the right 
-	solution for your new equipment installations, regular maintenance, and emergency repairs. We have 
-	earned our positive reputation by doing the job right. Our goal is to earn your business with upfront 
-	no hassle pricing and quality service. We offer weekend and evening service for your year round comfort. 
-	You can count on Grizzle Heating and Air LLC. We look forward to serving you!
-	</div> 
-</div>
+	<div class="container-fluid">
+	
+		<h1 style="color: #12C5FC; text-align: center; font-size:75px;">ABOUT US</h1>
+		
+			<div class="about2">
+			As a family owned and operated business, Grizzle Heating and Air LLC. has been proudly providing 
+			professional heating and cooling services to homeowners throughout the north Georgia area. With highly
+			qualified technicians, we ensure every job is done right. Grizzle Heating and Air LLC has the right 
+			solution for your new equipment installations, regular maintenance, and emergency repairs. We have 
+			earned our positive reputation by doing the job right. Our goal is to earn your business with upfront 
+			no hassle pricing and quality service. We offer weekend and evening service for your year round comfort. 
+			You can count on Grizzle Heating and Air LLC. We look forward to serving you!
+			</div> 
+	</div>
 </div>
 
 <!-- Container (Services Section) -->
 <div id="services" class="services">
-<div class="services2">
-<div class="container-fluid">
+	<div class="services2">
+		<div class="container-fluid">
 
-	<div class="test">
-	<h1 style="color: #FFFFFF; text-align: center; font-size:75px;">SERVICES</h1>
+			<h1 style="color: #FFFFFF; text-align: center; font-size:75px;">SERVICES</h1>
 	
-		<div class="services-floating">Floating box</div>
-		<div class="services-floating">Floating box</div>
-		<div class="services-floating">Floating box</div>
-		<div class="services-floating">Floating box</div>
-		<div class="services-floating">Floating box</div>
-		<div class="services-floating">Floating box</div>
-	</div>
+			<div class="services-floating slideanim">Floating box</div>
+			<div class="services-floating slideanim">Floating box</div>
+			<div class="services-floating slideanim">Floating box</div>
+			<div class="services-floating slideanim">Floating box</div>
+			<div class="services-floating slideanim">Floating box</div>
+			<div class="services-floating slideanim">Floating box</div>
  
-</div>
-</div>
+		</div>
+	</div>
 </div>
 
 <!-- Container (Maintenace Agreement Section) -->
 <div id="agreement" class="agreement">
-<div class="agreement2">
-<div class="container-fluid text-center">
-	<h1 style="color: #FFFFFF; text-align: center; font-size:75px;">MAINTENANCE AGREEMENT</h1>
+	<div class="agreement2">
+		<div class="container-fluid text-center">
+
+			<h1 style="color: #FFFFFF; text-align: center; font-size:75px;">MAINTENANCE AGREEMENT</h1>
 	
-	<div class="agreement-floating">Floating box</div>
-	<div class="agreement-floating">Floating box</div>
+			<div class="agreement-floating slideanim">Floating box</div>
+			<div class="agreement-floating slideanim">Floating box</div>
  
-</div>
-</div>
+		</div>
+	</div>
 </div>
 
 <!-- Container (Customer Reviews Section) -->
 <div id="reviews" class="reviews">
-<div class="container-fluid text-center">
+	<div class="container-fluid text-center">
+	
 	<h1 style="color: #FF0000; text-align: center; font-size:75px;">REVIEWS</h1>
  
-</div>
+	</div>
 </div>
 
 
