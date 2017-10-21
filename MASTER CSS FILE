@@ -67,9 +67,6 @@ p {
 		opacity: 0.75;
 		border-radius: 25px;
   }
-  .test{
-		
-  }
   .reviews {
 		background-color: #FFFFFF;
   }  
@@ -177,15 +174,15 @@ p {
   }
   
    @media screen and (max-width: 600px) {
-      .test  {
+      .services-info  {
             display: flex;
             flex-direction: column;
       }
       
-      .test > .box1 {order: 1;}
-      .test > .box2 {order: 3;}
-      .test > .box3 {order: 5;}
-      .test > .box4 {order: 2;}
-      .test > .box5 {order: 4;}
-      .test > .box6 {order: 6;}
+      .services-info > .box1 {order: 1;}
+      .services-info > .box2 {order: 3;}
+      .services-info > .box3 {order: 5;}
+      .services-info > .box4 {order: 2;}
+      .services-info > .box5 {order: 4;}
+      .services-info > .box6 {order: 6;}
   }
