@@ -175,3 +175,17 @@ p {
         font-size: 150px;
     }
   }
+  
+   @media screen and (max-width: 600px) {
+      .test  {
+            display: flex;
+            flex-direction: column;
+      }
+      
+      .test > .box1 {order: 1;}
+      .test > .box2 {order: 3;}
+      .test > .box3 {order: 5;}
+      .test > .box4 {order: 2;}
+      .test > .box5 {order: 4;}
+      .test > .box6 {order: 6;}
+  }
