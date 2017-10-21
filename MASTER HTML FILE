@@ -117,16 +117,16 @@
 <div id="services" class="services">
 	<div class="services2">
 		<div class="container-fluid">
-
+			<div class="services-info">
 			<h1 style="color: #FFFFFF; text-align: center; font-size:75px;">SERVICES</h1>
 	
-			<div class="services-floating slideanim">Floating box</div>
-			<div class="services-floating slideanim">Floating box</div>
-			<div class="services-floating slideanim">Floating box</div>
-			<div class="services-floating slideanim">Floating box</div>
-			<div class="services-floating slideanim">Floating box</div>
-			<div class="services-floating slideanim">Floating box</div>
- 
+			<div class="services-floating slideanim box1">Floating box</div>
+			<div class="services-floating slideanim box2">Floating box</div>
+			<div class="services-floating slideanim box3">Floating box</div>
+			<div class="services-floating slideanim box4">Floating box</div>
+			<div class="services-floating slideanim box5">Floating box</div>
+			<div class="services-floating slideanim box6">Floating box</div>
+ 			</div>
 		</div>
 	</div>
 </div>
