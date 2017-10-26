@@ -115,8 +115,6 @@
   }  
   .about2 {
 	    margin: auto;
-		width: 60%;
-		border: 3px solid #E0E0E0;
 		padding: 25px;
 		font-size:25px;
 		color: #303030;
@@ -135,7 +133,6 @@
   }  
   .services2 {
 		background-color: rgba(18, 197, 252, 0.75);
-		filter: alpha(opacity=50);
   }
   .services-floating {
 		float: left;
@@ -144,18 +141,12 @@
 		width: 500px;
 		height: 250px;
 		margin: 25px;
-		border: 3px solid #73AD21;
+		padding: 25px;
+		background-color: #1d65a5;
+		color: #FFFFFF;
+		opacity: 0.75;
+		border-radius: 25px;
   }
-  
-  .services-floating {
-      padding: 5px;
-  }
- 
- .services-header {
-      background-color: #fff;
-      padding: 5px;
-      text-align: center;
- }
  
   .floating-box-container{
 		opacity: 1.0;
@@ -199,16 +190,19 @@
   }
   .agreement2{
 		background-color: rgba(255, 0, 0, 0.75);
-		filter: alpha(opacity=50);
   }
   .agreement-floating {
-		float: left;
+	    float: left;
 		position: relative;
 		left: 5%;
 		width: 750px;
-		height: 500px;
+		height: 575px;
 		margin: 25px;
-		border: 3px solid #73AD21;
+		padding: 25px;
+		background-color: #911002;
+		color: #FFFFFF;
+		opacity: 0.75;
+		border-radius: 25px;
   }
  
  /* Reviews Section Styling */
@@ -221,9 +215,21 @@
 .reviews {
 		background-color: #FFFFFF;
   }
+.reviews2{
+	    margin: auto;
+		width: 75%;
+		border: 7px solid #E0E0E0;
+		border-radius: 25px;
+		padding: 25px;
+		font-size:25px;
+		color: #303030;
+        font-weight: 600;		
+		text-align: center;
+  }
   
   hr {
-      border-color: #7a7a7a;
+      border-color: #555;
+	  border-width: 3px;
 }
   
   /* Contact Section Styling */
@@ -236,4 +242,4 @@
       font-size: 50px;
       margin-bottom: 20px;
       color: #FF0000;
-  }
+}
