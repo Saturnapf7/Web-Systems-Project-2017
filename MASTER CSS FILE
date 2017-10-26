@@ -1,99 +1,30 @@
-p {
-      color: #303030;
-      font-weight: 600;
-  }
-  h1 {
-      color: #303030;
-      font-weight: 600;
-  } 
-  .about {
-		background-color: #FFFFFF;
-  }  
-  .about2{
-	    margin: auto;
-		width: 75%;
-		border: 7px solid #E0E0E0;
-		border-radius: 25px;
-		padding: 25px;
-		font-size:25px;
-		color: #303030;
-        font-weight: 600;		
-		text-align: center;
-  }
-  .services {
-		background-image: url('HVAC2.jpg');
-		max-height: 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-  }  
-  .services2 {
-		background-color: rgba(18, 197, 252, 0.5);
-  }
-  .services-floating {
-		float: left;
-		position: relative;
-		left: 5%;
-		width: 500px;
-		height: 250px;
-		margin: 25px;
-		padding: 25px;
-		background-color: #1d65a5;
-		color: #FFFFFF;
-		opacity: 0.75;
-		border-radius: 25px;
-  }
-  .agreement {
-		background-image: url('HVAC1.jpg');
-		max-height: 100%;
-		max-height: 100%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-  }
-  .agreement2{
-		background-color:rgba(255,0,0,0.3);
-  }
-  .agreement-floating {
-		float: left;
-		position: relative;
-		left: 5%;
-		width: 750px;
-		height: 500px;
-		margin: 25px;
-		padding: 25px;
-		background-color: #911002;
-		color: #FFFFFF;
-		opacity: 0.75;
-		border-radius: 25px;
-  }
-  .reviews {
-		background-color: #FFFFFF;
-  }  
-  .contact {
-		background-color: #E0E0E0;
-  } 
-  .slideshow {
-		background-color: #FFFFFF;
-  }  
-  .jumbotron {
-	  background-color: #FFFFFF;
-      color: #fff;
-      padding: 70px 0px 0px 0px;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #12C5FC;
-  }
-  .carousel-indicators li {
-      border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-      background-color: #FF0000;
-  }
+/* General Page Styling */
+      p {
+            color: #303030;
+            font-weight: 600;
+      }
+      h1 {
+            color: #303030;
+            font-weight: 600;
+      }
+      
+      @media screen and (max-width: 768px) {
+            .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+      }
+      .btn-lg {
+            width: 100%;
+            margin-bottom: 35px;
+            }
+      }
+      @media screen and (max-width: 480px) {
+            .logo {
+                  font-size: 150px;
+            }
+      }
+  
+   /* Navbar Styling */
   .navbar {
       margin-bottom: 0;
       z-index: 9999;
@@ -124,11 +55,31 @@ p {
       border-color: transparent;
       color: #fff !important;
   }
-  footer .glyphicon {
-      font-size: 50px;
-      margin-bottom: 20px;
-      color: #FF0000;
+  
+  /*Carousel Styling */
+  .slideshow {
+		background-color: #FFFFFF;
+  } 
+  
+  .jumbotron {
+	  background-color: #FFFFFF;
+      color: #fff;
+      padding: 70px 0px 0px 0px;
   }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #12C5FC;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #FF0000;
+  }
+  
   .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
@@ -157,32 +108,132 @@ p {
       -webkit-transform: translateY(0%);
     }
   }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
+  
+  /* About Section Styling */
+  .about {
+		background-color: #FFFFFF;
+  }  
+  .about2 {
+	    margin: auto;
+		width: 60%;
+		border: 3px solid #E0E0E0;
+		padding: 25px;
+		font-size:25px;
+		color: #303030;
+        font-weight: 600;		
+		text-align: center;
   }
   
-   @media screen and (max-width: 700px) {
-      .services-info  {
+  /* Services Section Styling */
+  
+  .services {
+		background-image: url('HVAC2.jpg');
+		max-height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+  }  
+  .services2 {
+		background-color: rgba(18, 197, 252, 0.75);
+		filter: alpha(opacity=50);
+  }
+  .services-floating {
+		float: left;
+		position: relative;
+		left: 5%;
+		width: 500px;
+		height: 250px;
+		margin: 25px;
+		border: 3px solid #73AD21;
+  }
+  
+  .services-floating {
+      padding: 5px;
+  }
+ 
+ .services-header {
+      background-color: #fff;
+      padding: 5px;
+      text-align: center;
+ }
+ 
+  .floating-box-container{
+		opacity: 1.0;
+		filter: alpha(opacity=50);
+  }
+  
+  /* Flexbox Styling */
+  @media screen and (max-width: 700px) {
+      .floating-box-container  {
             display: flex;
             flex-direction: column;
+      }   
+      .floating-box-container > .box1 {
+            order: 1;
       }
-      
-      .services-info > .box1 {order: 1;}
-      .services-info > .box2 {order: 3;}
-      .services-info > .box3 {order: 5;}
-      .services-info > .box4 {order: 2;}
-      .services-info > .box5 {order: 4;}
-      .services-info > .box6 {order: 6;}
+      .floating-box-container > .box2 {
+            order: 3;
+      }
+      .floating-box-container > .box3 {
+            order: 5;
+      }
+      .floating-box-container > .box4 {
+            order: 2;
+      }
+      .floating-box-container > .box5 {
+            order: 4;
+      }
+      .floating-box-container > .box6 {
+            order: 6;
+      }
+  }
+ 
+  /* Agreement Section Styling */
+  .agreement {
+		background-image: url('HVAC1.jpg');
+		max-height: 100%;
+		max-height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+  }
+  .agreement2{
+		background-color: rgba(255, 0, 0, 0.75);
+		filter: alpha(opacity=50);
+  }
+  .agreement-floating {
+		float: left;
+		position: relative;
+		left: 5%;
+		width: 750px;
+		height: 500px;
+		margin: 25px;
+		border: 3px solid #73AD21;
+  }
+ 
+ /* Reviews Section Styling */
+ .client-name {
+      color: gold;
+      font-size: 25px;
+      font-weight: bold;
+}
+
+.reviews {
+		background-color: #FFFFFF;
+  }
+  
+  hr {
+      border-color: #7a7a7a;
+}
+  
+  /* Contact Section Styling */
+   .contact {
+		background-color: #E0E0E0;
+  }
+  
+  /* Footer Styling */
+   footer .glyphicon {
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: #FF0000;
   }
