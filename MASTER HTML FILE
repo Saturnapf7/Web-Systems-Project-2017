@@ -102,13 +102,21 @@
 		<h1 style="color: #12C5FC; text-align: center; font-size:75px;">ABOUT US</h1>
 		
 			<div class="about2">
-			As a family owned and operated business, Grizzle Heating and Air LLC. has been proudly providing 
-			professional heating and cooling services to homeowners throughout the north Georgia area. With highly
-			qualified technicians, we ensure every job is done right. Grizzle Heating and Air LLC has the right 
-			solution for your new equipment installations, regular maintenance, and emergency repairs. We have 
-			earned our positive reputation by doing the job right. Our goal is to earn your business with upfront 
-			no hassle pricing and quality service. We offer weekend and evening service for your year round comfort. 
-			You can count on Grizzle Heating and Air LLC. We look forward to serving you!
+				<p>As a family owned and operated business, Grizzle Heating and Air LLC
+				  has been proudly providing professional heating and cooling services to
+				  homeowners throughout the 575 corridor. Our technicians are highly qualified
+				  and trained to ensure every job is done right. From new equipment installations,
+				  to regular maintenance and emergency repairs, we have you covered.
+				  Grizzle Heating and Air LLC is the HVAC company you can count on.</p>
+				  <hr>
+				  <p>Grizzle Heating and Air earned a positive reputation by doing the job
+				  right the first time. Our goal is to earn your trust and maintain a lasting,
+				  long-term relationship with our clients. We offer upfront pricing and no
+				  hidden fees, as well as emergency service. We look forward to making you
+				  comfortable year round!</p>
+				  <hr>
+				  <h2 style="color: #fff; background-color: #f4511e; font-family: IMPACT; font-size: 45px; ">
+					JASPER, CANTON, BALLGROUND, WOODSTOCK, MARIETTA, ELLIJAY, & MORE</h2>
 			</div> 
 	</div>
 </div>
@@ -169,6 +177,18 @@
 	<div class="container-fluid text-center">
 	
 	<h1 style="color: #FF0000; text-align: center; font-size:75px;">REVIEWS</h1>
+	<hr>
+	<div class="testimonial">
+	  <h4>“Grizzle Heating and Air came out and replaced the heat pump in our attic in one day.
+	  No hassle or mess. We would recommend them to anyone.”<br><br><span class="client-name">Samuel C.</span></h4>
+	</div>
+	<hr>
+	<div class="testimonial">
+	  <h4>“We had Grizzle Heating and Air quote a replacement for our failing heating and air system.
+	  Tommy explained everything thoroughly and gave us a much better price than the other guys.
+	  A beautiful installation and works great!”<br><br><span class="client-name">J. Brown</span></h4>
+	</div>
+	<hr>
  
 	</div>
 </div>
