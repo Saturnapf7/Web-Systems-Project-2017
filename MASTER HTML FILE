@@ -116,19 +116,37 @@
 <!-- Container (Services Section) -->
 <div id="services" class="services">
 	<div class="services2">
-		<div class="container-fluid">
-			<div class="services-info">
-			<h1 style="color: #FFFFFF; text-align: center; font-size:75px;">SERVICES</h1>
-	
-			<div class="services-floating slideanim box1">Floating box</div>
-			<div class="services-floating slideanim box2">Floating box</div>
-			<div class="services-floating slideanim box3">Floating box</div>
-			<div class="services-floating slideanim box4">Floating box</div>
-			<div class="services-floating slideanim box5">Floating box</div>
-			<div class="services-floating slideanim box6">Floating box</div>
- 			</div>
+		<h1 class="header" style="color: #FFFFFF; text-align: center; font-size:75px;">SERVICES</h1>
+		<div class="floating-box-container">
+			<div class="services-floating box1">
+			  <h3 class="services-header">Heating and Air Conditioning Service</h3>
+			  <p>A highly trained and experienced, uniformed professional will
+			  arrive equipped with the tools, diagnostic equipment, and range
+			  of replacement parts to accurately assess and solve your heating
+			  nd air condition issues. With an accurate analysis of your cooling
+			  equipment, we provide honest and cost-effective recommendations.</p>
+			</div>
+			<div class="services-floating box2">
+			  <h3 class="services-header">Heating and Air Conditioning Replacements</h3>
+			  <p>The installation of a new heating and air conditioning system
+			  can be overwhelming and stressful.When you rely on Grizzle Heating and Air
+			  for recommendations, and installation services, we help to eliminate the risk.
+			  We guarantee all of our installation services for one full year.</p>
+			</div>
+			<div class="services-floating box3">
+			  <h3 class="services-header">Ductless Mini Split Installation and Service</h3>
+			  <p>A ductless mini split system provides efficient heating and cooling without
+			  major disruptions. Lightweight and stylish, ductless systems can be incorporated
+			  into just about any space. Ductless systems offer a wide range of versatility.
+			  Whether for a single room or multiple room application,
+			  Mini Splits operate quietly and efficiently keeping energy costs low.</p>
+			</div>
+			<div class="services-floating box4">Floating box 4</div>
+			<div class="services-floating box5">Floating box 5</div>
+			<div class="services-floating box6">Floating box 6</div>
 		</div>
-	</div>
+</div>
+</div>
 </div>
 
 <!-- Container (Maintenace Agreement Section) -->
