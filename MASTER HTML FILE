@@ -116,6 +116,7 @@
 <!-- Container (Services Section) -->
 <div id="services" class="services">
 	<div class="services2">
+	     <div class="container-fluid">
 		<h1 class="header" style="color: #FFFFFF; text-align: center; font-size:75px;">SERVICES</h1>
 		<div class="floating-box-container">
 			<div class="services-floating box1">
