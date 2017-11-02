@@ -1,3 +1,10 @@
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 /* General Page Styling */
       p {
             color: #303030;
@@ -7,23 +14,6 @@
             color: #303030;
             font-weight: 600;
       }
-      
-      @media screen and (max-width: 768px) {
-            .col-sm-4 {
-            text-align: center;
-            margin: 25px 0;
-      }
-      .btn-lg {
-            width: 100%;
-            margin-bottom: 35px;
-            }
-      }
-      @media screen and (max-width: 480px) {
-            .logo {
-                  font-size: 150px;
-            }
-      }
-  
    /* Navbar Styling */
   .navbar {
       margin-bottom: 0;
@@ -64,7 +54,7 @@
   .jumbotron {
 	  background-color: #FFFFFF;
       color: #fff;
-      padding: 70px 0px 0px 0px;
+      padding: 100px 75px 0px 75px;
   }
   .container-fluid {
       padding: 60px 50px;
@@ -112,16 +102,18 @@
   /* About Section Styling */
   .about {
 		background-color: #FFFFFF;
+		float:left;
+		width:100%;
+
   }  
   .about2 {
 	    margin: auto;
-		padding: 25px;
-		font-size:25px;
+		padding: 5px;
+		font-size:3vw;
 		color: #303030;
         font-weight: 600;		
 		text-align: center;
   }
-  
   /* Services Section Styling */
   
   .services {
