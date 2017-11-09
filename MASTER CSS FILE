@@ -172,6 +172,17 @@ html,body
       .floating-box-container > .box6 {
             order: 6;
       }
+      
+       .services-floating, .agreement.floating {
+        left: unset;
+        height: 300px;
+        margin: 10px;
+        opacity: 0.75;
+        overflow: auto;
+        padding: 15px;
+        text-align: center;
+        width: auto;
+    }
   }
  
   /* Agreement Section Styling */
