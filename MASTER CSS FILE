@@ -109,7 +109,8 @@ html,body
   .about2 {
 	    margin: auto;
 		padding: 5px;
-		font-size:3vw;
+		font-size:5vmax;
+		font-size: 3vmin;
 		color: #303030;
         font-weight: 600;		
 		text-align: center;
@@ -131,7 +132,7 @@ html,body
 		position: relative;
 		left: 5%;
 		width: 500px;
-		height: 250px;
+		height: 100%;
 		margin: 25px;
 		padding: 25px;
 		background-color: #1d65a5;
@@ -143,6 +144,8 @@ html,body
   .floating-box-container{
 		opacity: 1.0;
 		filter: alpha(opacity=50);
+		font-size: 4vmax;
+		font-size: 2vmin;
   }
   
   /* Flexbox Styling */
@@ -188,13 +191,15 @@ html,body
 		position: relative;
 		left: 5%;
 		width: 750px;
-		height: 575px;
+		height: 100%;
 		margin: 25px;
 		padding: 25px;
 		background-color: #911002;
 		color: #FFFFFF;
 		opacity: 0.75;
 		border-radius: 25px;
+		font-size: 4vmax;
+		font-size: 2vmin;
   }
  
  /* Reviews Section Styling */
@@ -207,17 +212,7 @@ html,body
 .reviews {
 		background-color: #FFFFFF;
   }
-.reviews2{
-	    margin: auto;
-		width: 75%;
-		border: 7px solid #E0E0E0;
-		border-radius: 25px;
-		padding: 25px;
-		font-size:25px;
-		color: #303030;
-        font-weight: 600;		
-		text-align: center;
-  }
+
   
   hr {
       border-color: #555;
