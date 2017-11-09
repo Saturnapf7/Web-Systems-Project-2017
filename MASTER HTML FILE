@@ -99,7 +99,7 @@
 <div id="about" class="about">
 	<div class="container-fluid">
 	
-		<h1 style="color: #12C5FC; text-align: center; font-size:10vw;">ABOUT US</h1>
+		<h1 style="color: #12C5FC; text-align: center; font-size: 7vw">ABOUT US</h1>
 		
 			<div class="about2">
 				<hr>
@@ -116,7 +116,7 @@
 				  hidden fees, as well as emergency service. We look forward to making you
 				  comfortable year round!</p>
 				  <hr>
-				  <h2 style="color: #fff; background-color: #f4511e; font-family: IMPACT; font-size: 45px; ">
+				  <h2 style="color: #fff; background-color: #f4511e; font-family: IMPACT; font-size: 3vw; ">
 					JASPER, CANTON, BALLGROUND, WOODSTOCK, MARIETTA, ELLIJAY, & MORE</h2>
 			</div> 
 	</div>
@@ -126,7 +126,7 @@
 <div id="services" class="services">
 	<div class="services2">
 	     <div class="container-fluid">
-		<h1 class="header" style="color: #FFFFFF; text-align: center; font-size:10vw;">SERVICES</h1>
+		<h1 class="header" style="color: #FFFFFF; text-align: center; font-size:7vw;">SERVICES</h1>
 		<div class="floating-box-container">
 			<div class="services-floating box1 slideanim">
 			  <h3>Heating and Air Conditioning Service</h3>
@@ -164,7 +164,7 @@
 	<div class="agreement2">
 		<div class="container-fluid">
 
-			<h1 style="color: #FFFFFF; text-align: center; font-size:10vw;">MAINTENANCE AGREEMENT</h1>
+			<h1 style="color: #FFFFFF; text-align: center; font-size:7vw;">MAINTENANCE AGREEMENT</h1>
 	
 			<div class="agreement-floating slideanim">
 				
@@ -172,10 +172,10 @@
 				
 				<br>
 				
-				<h3>Grizzle Heating and Air LLC is committed to the quality service of your heating and air 
+				Grizzle Heating and Air LLC is committed to the quality service of your heating and air 
 				conditioning system and all accompanying warranties. Our Preferred Customer Plan helps 
 				to preserve your system and its warranties. Regular maintenance of your heating and air 
-				conditioning system maintains the energy efficiency and reduces your costs in the long run.</h3>
+				conditioning system maintains the energy efficiency and reduces your costs in the long run.
 				
 				<br>
 				
@@ -183,9 +183,9 @@
 				
 				<br>
 				
-				<h3>•	Priority scheduling for any service needs throughout the year <br>
+				•	Priority scheduling for any service needs throughout the year <br>
 					•	10% discount on service repairs <br>
-					•	Reduced diagnostic fee on service calls <br>  </h3>
+					•	Reduced diagnostic fee on service calls <br>
 			
 			</div>
 			
@@ -196,7 +196,7 @@
 				
 				<br>
 				
-				<h3>•	One fall visit per year to clean and check your furnace: <br>
+				•	One fall visit per year to clean and check your furnace: <br>
 					<ul style="list-style-type:square">
 						<li>Multipoint inspection </li>
 						<li>Burner assembly cleaning (pulling blower assembly is extra) </li>
@@ -223,17 +223,17 @@
 <div id="reviews" class="reviews">
 	<div class="container-fluid text-center">
 	
-		<h1 style="color: #FF0000; text-align: center; font-size:10vw;">REVIEWS</h1>
+		<h1 style="color: #FF0000; text-align: center; font-size:7vw;">REVIEWS</h1>
 			<hr>
 			<div class="testimonial">
-				  <h4>“Grizzle Heating and Air came out and replaced the heat pump in our attic in one day.
-				  No hassle or mess. We would recommend them to anyone.”<br><br><span class="client-name">Samuel C.</span></h4>
+				  <h4 style=" font-size:5vmax; font-size: 3vmin;">“Grizzle Heating and Air came out and replaced the heat pump in our attic in one day.
+				  No hassle or mess. We would recommend them to anyone.”<br><br><span class="client-name" style=" font-size:6vmax; font-size: 4vmin;">Samuel C.</span></h4>
 			</div>
 			<hr>
 			<div class="testimonial">
-				  <h4>“We had Grizzle Heating and Air quote a replacement for our failing heating and air system.
+				  <h4 style=" font-size:5vmax; font-size: 3vmin;">“We had Grizzle Heating and Air quote a replacement for our failing heating and air system.
 				  Tommy explained everything thoroughly and gave us a much better price than the other guys.
-				  A beautiful installation and works great!”<br><br><span class="client-name">J. Brown</span></h4>
+				  A beautiful installation and works great!”<br><br><span class="client-name" style=" font-size:6vmax; font-size: 4vmin;">J. Brown</span></h4>
 			</div>
 			<hr>
  
@@ -244,9 +244,9 @@
 <!-- Container (Contact Section) -->
 <div id="contact" class="contact">
 <div class="container-fluid">
-  <h1 style="color: #FFFFFF; text-align: center; font-size:10vw;">CONTACT US</h1><br>
+  <h1 style="color: #FFFFFF; text-align: center; font-size:7vw;">CONTACT US</h1><br>
   <div class="row">
-    <div class="col-sm-5">
+    <div class="col-sm-5" style=" font-size:4vmax; font-size:2vmin;">
       <p>For more information regarding an appointment or questions, please contact:</p>
       <p><span class="glyphicon glyphicon-map-marker"></span>   86 Mountain Ivy Ct. Jasper, Ga 30143</p>
       <p><span class="glyphicon glyphicon-phone"></span>   770.361.2062</p>
