@@ -25,19 +25,23 @@
     //Validate form data
     if (empty($name))
     {
-      $errors['errors']['name'] = "Name can't be empty";
+      $errors['errors']['name'] = "Name can't be empty.";
     }
     elseif (strlen($name) < 2)
     {
-      $errors['errors']['name'] = "Name must be at least 2 characters";
+      $errors['errors']['name'] = "Names must be at least 2 characters in length.";
+    }
+    elseif (!validateName($name))
+    {
+      $errors['errors']['name'] = "Names can only consist of letters, spaces, periods and hyphens.";
     }
     if (empty($email))
     {
-      $errors['errors']['email'] = "Email can't be empty";
+      $errors['errors']['email'] = "Email can't be empty.";
     }
     elseif(!validateEmail($email))
     {
-      $errors['errors']['email'] = "Email address is invalid. Please enter a valid address e.g, 'example@email.com'";
+      $errors['errors']['email'] = "Email address is invalid. Please enter a valid address e.g, 'example@email.com'.";
     }
     if (empty($phone))
     {
@@ -45,7 +49,7 @@
     }
     elseif (!validatePhone($phone))
     {
-      $errors['errors']['phone'] = "Phone wrong format";
+      $errors['errors']['phone'] = "Phone number is invalid. Please enter a valid number e.g, '000-000-0000' or '0000000000'.";
     }
     else
     {
@@ -54,11 +58,11 @@
     }
     if (empty($subject))
     {
-      $errors['errors']['subject'] = "Subject can't be empty";
+      $errors['errors']['subject'] = "Subject can't be empty.";
     }
     else if (strlen($subject) < 5)
     {
-      $errors['errors']['subject'] = "Subject must be at least 5 characters";
+      $errors['errors']['subject'] = "Subject must be at least 5 characters in length.";
     }
     
     //Displays errors if array isn't empty
@@ -119,10 +123,28 @@
   function sanitizeInput($input)
   {
     $input = strip_tags($input);
+    $input = trim($input);
     $input = htmlspecialchars($input);
     $input = htmlentities($input);
     return $input;
   }
+  
+  /**
+   *
+   * validateName()
+   *
+   * Checks if name is in an acceptable format
+   *
+   */
+   function validateName($name)
+   {
+     $nameRegex = "/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/";
+     if (preg_match($nameRegex, $name))
+     {
+       return true;
+     }
+     return false; 
+   }
   
   /**
    * validateEmail()
@@ -148,13 +170,14 @@
    */
   function validatePhone($phone)
   {
-    //Remove every character besides numbers
-     $numbersOnly = preg_replace("/\D/","",$phone);
-   
-     if (strlen($numbersOnly) == 10)
-     {
-      return $numbersOnly;
-     }
-     return false;     
+    $phoneRegex = "/(\d{3}\-\d{3}\-\d{4})$/"; // 000-000-0000
+    if (preg_match($phoneRegex, $phone) || (strlen($phone) == 10 && ctype_digit($phone)))
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }  
   }
 ?>
