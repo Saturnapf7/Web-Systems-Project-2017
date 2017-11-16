@@ -6,6 +6,7 @@ html,body
     overflow-x: hidden; 
 }
 /* General Page Styling */
+
       p {
             color: #303030;
             font-weight: 600;
@@ -14,6 +15,27 @@ html,body
             color: #303030;
             font-weight: 600;
       }
+      .header {
+            font-size: 10vmax;
+	    font-size: 10vmin;
+      }
+      .header2 {
+            font-size: 5vmax;
+	    font-size: 5vmin;
+            padding: 10px;
+      }
+
+      .header3 {
+            font-size: 3.5vmax;
+	    font-size: 3.5vmin;
+      }
+
+      .header4 {
+            font-size: 3.5vmax;
+	    font-size: 3.5vmin;
+      }
+
+
    /* Navbar Styling */
   .navbar {
       margin-bottom: 0;
@@ -106,14 +128,15 @@ html,body
 		width:100%;
 
   }  
+
   .about2 {
 	    margin: auto;
-		padding: 5px;
-		font-size:5vmax;
-		font-size: 3vmin;
-		color: #303030;
-        font-weight: 600;		
-		text-align: center;
+	    padding: 5px;
+            font-size: 5vmax;
+	    font-size: 3.5vmin;
+	    color: #303030;
+            font-weight: 600;		
+            text-align: center;
   }
   /* Services Section Styling */
   
@@ -144,8 +167,8 @@ html,body
   .floating-box-container{
 		opacity: 1.0;
 		filter: alpha(opacity=50);
-		font-size: 4vmax;
-		font-size: 2vmin;
+		font-size: 3vmax;
+		font-size: 2.5vmin;
   }
   
   /* Flexbox Styling */
@@ -172,17 +195,16 @@ html,body
       .floating-box-container > .box6 {
             order: 6;
       }
-      
-       .services-floating, .agreement.floating {
+	  
+		   .services-floating, .agreement.floating {
         left: unset;
-        height: 300px;
         margin: 10px;
         opacity: 0.75;
         overflow: auto;
         padding: 15px;
         text-align: center;
         width: auto;
-    }
+		}
   }
  
   /* Agreement Section Styling */
@@ -201,7 +223,7 @@ html,body
 	    float: left;
 		position: relative;
 		left: 5%;
-		width: 750px;
+		width: 500px;
 		height: 100%;
 		margin: 25px;
 		padding: 25px;
@@ -209,8 +231,8 @@ html,body
 		color: #FFFFFF;
 		opacity: 0.75;
 		border-radius: 25px;
-		font-size: 4vmax;
-		font-size: 2vmin;
+		font-size: 3vmax;
+		font-size: 2.5vmin;
   }
  
  /* Reviews Section Styling */
