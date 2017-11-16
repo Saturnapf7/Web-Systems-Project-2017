@@ -79,13 +79,20 @@
       //Send email with inquiry information if data insert was successfully
       $to = $testEmail;
       $esubject = "Customer Inquiry - $subject";
-      $body = "Name: $name" .
-              "Email: $email" .
-              "Phone: $phone" . $message;
-      $header = "From: Grizzle Inquiry";
+      $body= "<html><body>
+      <label>Name:</label> $name<br>
+      <label>Email:</label> $email<br>
+      <label>Phone:</label> $phone<br>
+      <label>Message: </label>$message
+      </body></html>";
+      
+      $header = "MIME-Version: 1.0\r\n";
+      $header .= "Content-Type: text/html; charset=UTF-8\r\n";
+      $header .= "From: Grizzle Inquiry";
+     
       
       // mail(to, subject, body, header)
-      if (mail($to, $esubject, $body))
+      if (mail($to, $subject, $body, $header))
       {
         //echo json_encode("A confirmation email has been sent to <a href='#'>" . $testEmail . "</a>");
         echo json_encode("Thanks for contacting us!
