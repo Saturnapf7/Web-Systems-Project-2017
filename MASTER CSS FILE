@@ -235,7 +235,6 @@ html,body
         width: 310px;
     }
      .agreement-floating {
-        left: unset;
         text-align: center;
         width: 360px;
      }
