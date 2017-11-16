@@ -1,8 +1,8 @@
 <?php
   $db_hostname = 'localhost';
-  $db_database = 'erbwebse_grizzle';
-  $db_username = 'erbwebse_test';
-  $db_password = 'password';
+  $db_database = 'grizzle';
+  $db_username = 'Tgrizzle';
+  $db_password = 'Chattahoochee1!';
   
   try
   {
@@ -13,6 +13,6 @@
   }
   catch (PDOException $e)
   {
-    echo "Connection Failed: " . $e->getMessage();
+    echo json_encode("Connection Failed: " . $e->getMessage());
   }
 ?>
