@@ -51,11 +51,6 @@
     {
       $errors['errors']['phone'] = "Phone number is invalid. Please enter a valid number e.g, '000-000-0000' or '0000000000'.";
     }
-    else
-    {
-      //Set phone number equal to value containing digits only
-      $phone = validatePhone($phone);
-    }
     if (empty($subject))
     {
       $errors['errors']['subject'] = "Subject can't be empty.";
@@ -83,17 +78,18 @@
       //Send email with inquiry information if data insert was successfully
       $to = $testEmail;
       $subject = "Customer Inquiry - $subject";
+      
+      $header = "From: Grizzle Heating & Air donotreply@reply.com \r\n";
+      $header .= "MIME-Version: 1.0\r\n";
+      $header .= "Content-Type: text/html; charset=UTF-8\r\n";
+      
       $body= "<html><body>
       <label>Name:</label> $name<br>
       <label>Email:</label> $email<br>
-      <label>Phone:</label> $phone<br>
-      <label>Message: </label>$message
+      <label>Phone:</label> $phone<br><br>
+      $message
       </body></html>";
       
-      $header = "MIME-Version: 1.0\r\n";
-      $header .= "Content-Type: text/html; charset=UTF-8\r\n";
-      $header .= "From: Grizzle Inquiry";
-     
       
       // mail(to, subject, body, header)
       if (mail($to, $subject, $body, $header))
