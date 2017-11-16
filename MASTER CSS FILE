@@ -229,13 +229,19 @@ html,body
 }
 
 /* For average screen sizes(15.6)*/
-  @media screen and (max-width: 1440px) { 
-    .services-floating {
+  @media screen and (max-width: 1400px) { 
+    .services-floating{
+        height: 350px;
         text-align: center;
-        width: 310px;
+        width: 325px;
     }
+    
+    .box4, .box5, .box6 {
+        height: auto;
+    }
+    
      .agreement-floating {
-        text-align: center;
+        left: auto;
         width: 360px;
      }
   }
@@ -266,6 +272,8 @@ html,body
       }
       
        .services-floating, .agreement-floating {
+        height: auto;
+        left: auto;
         margin: 10px;
         opacity: 0.75;
         overflow: auto;
