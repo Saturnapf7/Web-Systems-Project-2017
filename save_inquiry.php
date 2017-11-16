@@ -78,7 +78,7 @@
       
       //Send email with inquiry information if data insert was successfully
       $to = $testEmail;
-      $esubject = "Customer Inquiry - $subject";
+      $subject = "Customer Inquiry - $subject";
       $body= "<html><body>
       <label>Name:</label> $name<br>
       <label>Email:</label> $email<br>
