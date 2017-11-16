@@ -99,7 +99,7 @@
 <div id="about" class="about">
 	<div class="container-fluid">
 	
-		<h1 style="color: #12C5FC; text-align: center; font-size: 7vw">ABOUT US</h1>
+		<h1 class="header" style="color: #12C5FC; text-align: center;">ABOUT US</h1>
 		
 			<div class="about2">
 				<hr>
@@ -116,7 +116,7 @@
 				  hidden fees, as well as emergency service. We look forward to making you
 				  comfortable year round!</p>
 				  <hr>
-				  <h2 style="color: #fff; background-color: #f4511e; font-family: IMPACT; font-size: 3vw; ">
+				  <h2 class="header2" style="color: #fff; background-color: #f4511e; font-family: IMPACT;">
 					JASPER, CANTON, BALLGROUND, WOODSTOCK, MARIETTA, ELLIJAY, & MORE</h2>
 			</div> 
 	</div>
@@ -126,10 +126,12 @@
 <div id="services" class="services">
 	<div class="services2">
 	     <div class="container-fluid">
-		<h1 class="header" style="color: #FFFFFF; text-align: center; font-size:7vw;">SERVICES</h1>
+
+		<h1 class="header" style="color: #FFFFFF; text-align: center;">SERVICES</h1>
+
 		<div class="floating-box-container">
 			<div class="services-floating box1 slideanim">
-			  <h3>Heating and Air Conditioning Service</h3>
+			  <h3 class="header3">Heating and Air Conditioning Service</h3>
 			  A highly trained and experienced, uniformed professional will
 			  arrive equipped with the tools, diagnostic equipment, and range
 			  of replacement parts to accurately assess and solve your heating
@@ -137,14 +139,14 @@
 			  equipment, we provide honest and cost-effective recommendations.
 			</div>
 			<div class="services-floating box2 slideanim">
-			  <h3>Heating and Air Conditioning Replacements</h3>
+			  <h3 class="header3">Heating and Air Conditioning Replacements</h3>
 			  The installation of a new heating and air conditioning system
 			  can be overwhelming and stressful.When you rely on Grizzle Heating and Air
 			  for recommendations, and installation services, we help to eliminate the risk.
 			  We guarantee all of our installation services for one full year.
 			</div>
 			<div class="services-floating box3 slideanim">
-			  <h3>Ductless Mini Split Installation and Service</h3>
+			  <h3 class="header3">Ductless Mini Split Installation and Service</h3>
 			  A ductless mini split system provides efficient heating and cooling without
 			  major disruptions. Lightweight and stylish, ductless systems can be incorporated
 			  into just about any space. Ductless systems offer a wide range of versatility.
@@ -164,11 +166,11 @@
 	<div class="agreement2">
 		<div class="container-fluid">
 
-			<h1 style="color: #FFFFFF; text-align: center; font-size:7vw;">MAINTENANCE AGREEMENT</h1>
+			<h1 class="header" style="color: #FFFFFF; text-align: center;">MAINTENANCE AGREEMENT</h1>
 	
 			<div class="agreement-floating slideanim">
 				
-				<h2 style="color: #FFFFFF;" >PREFERRED CUSTOMER PLAN</h2>
+				<h2 class="header4" style="color: #FFFFFF;" >PREFERRED CUSTOMER PLAN</h2>
 				
 				<br>
 				
@@ -179,7 +181,7 @@
 				
 				<br>
 				
-				<h2 style="color: #FFFFFF;" >PREFERRED CUSTOMER PLAN INCLUDES THE FOLLOWING:</h2>
+				<h2 class="header4" style="color: #FFFFFF;" >PREFERRED CUSTOMER PLAN INCLUDES THE FOLLOWING:</h2>
 				
 				<br>
 				
@@ -192,7 +194,7 @@
 			
 			<div class="agreement-floating slideanim">
 				
-				<h2 style="color: #FFFFFF;" >PREFERRED CUSTOMER PLAN IS ALSO SEASONAL:</h2>
+				<h2 class="header4" style="color: #FFFFFF;" >Preferred Customer Seasonal: Fall</h2>
 				
 				<br>
 				
@@ -204,6 +206,16 @@
 						<li>Inspecting the mechanical components for wear </li>
 						<li>Free 1” filter replacement (standard sizes) </li>
 					</ul>
+			
+			</div>
+                        
+
+                        <div class="agreement-floating slideanim">
+				
+				<h2 class="header4" style="color: #FFFFFF;" >Preferred Customer Seasonal: Spring</h2>
+				
+				<br>
+				
 					•	One spring visit per year to clean and check your air conditioner: <br>
 					<ul style="list-style-type:square">
 						<li>Multipoint inspection </li>
@@ -223,7 +235,7 @@
 <div id="reviews" class="reviews">
 	<div class="container-fluid text-center">
 	
-		<h1 style="color: #FF0000; text-align: center; font-size:7vw;">REVIEWS</h1>
+		<h1 class="header" style="color: #FF0000; text-align: center;">REVIEWS</h1>
 			<hr>
 			<div class="testimonial">
 				  <h4 style=" font-size:5vmax; font-size: 3vmin;">“Grizzle Heating and Air came out and replaced the heat pump in our attic in one day.
@@ -244,7 +256,9 @@
 <!-- Container (Contact Section) -->
 <div id="contact" class="contact">
 <div class="container-fluid">
-  <h1 style="color: #FFFFFF; text-align: center; font-size:7vw;">CONTACT US</h1><br>
+
+  <h1 class="header" style="color: #FFFFFF; text-align: center;">CONTACT US</h1><br>
+
   <div class="row">
     <div class="col-sm-5" style=" font-size:4vmax; font-size:2vmin;">
       <p>For more information regarding an appointment or questions, please contact:</p>
