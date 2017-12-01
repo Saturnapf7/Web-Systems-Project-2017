@@ -41,6 +41,12 @@ html,body
 	    font-size: 3vmin;
             font-weight: bold;
       }
+      .header6 {
+            font-size: 3.5vmax;
+	    font-size: 3.5vmin;
+	    text-align: center;
+            padding: 5px;   
+      }
 
 
 
@@ -49,9 +55,10 @@ html,body
       margin-bottom: 0;
       z-index: 9999;
       border: 0;
-      font-size: 12px !important;
+      font-size: 15px !important;
+      font-weight: 600;
       line-height: 1.42857143 !important;
-      letter-spacing: 4px;
+      letter-spacing: 2px;
       border-radius: 0;
       font-family: Montserrat, sans-serif;
   }
@@ -132,8 +139,6 @@ html,body
   /* About Section Styling */
   .about {
 		background-color: #FFFFFF;
-		float:left;
-		width:100%;
 
   }  
 
@@ -228,6 +233,11 @@ html,body
    .contact {
 		background-color: #E0E0E0;
   }
+   .contact2 {
+            font-size: 3.5vmax;
+	    font-size: 3.5vmin;
+
+  }
   
   /* Footer Styling */
    footer .glyphicon {
@@ -236,27 +246,9 @@ html,body
       color: #FF0000;
 }
 
-/* For average screen sizes(15.6)*/
-  @media screen and (max-width: 1400px) { 
-    .services-floating{
-        height: 350px;
-        text-align: center;
-        width: 325px;
-    }
-    
-    .box4, .box5, .box6 {
-        height: auto;
-    }
-    
-     .agreement-floating {
-        left: auto;
-        width: 360px;
-     }
-  }
- 
-   /*Flexbox Styling */
-  @media screen and (max-width: 700px) {
-      .floating-box-container  {
+/* Small screens to tablets */
+@media only screen and (max-width : 1200px) {
+ .floating-box-container  {
             display: flex;
             flex-direction: column;
       }   
@@ -279,7 +271,7 @@ html,body
             order: 6;
       }
       
-       .services-floating, .agreement-floating {
+      .services-floating, .agreement-floating {
         height: auto;
         left: auto;
         margin: 10px;
@@ -290,5 +282,27 @@ html,body
         width: auto;
     }
     
+    .agreement-floating {
+    	width: 100%;
+    }
+}
 
-  }
+
+/* Medium to large screens */
+@media (min-width: 1300px) and (max-width: 1800px) {
+     .services-floating{
+        height: 350px;
+        overflow: auto;
+        text-align: center;
+        width: 325px;
+    }
+    
+    .box4, .box5, .box6 {
+        height: auto;
+    }
+    
+     .agreement-floating {
+        left: auto;
+        width: 350px;
+     }
+}
