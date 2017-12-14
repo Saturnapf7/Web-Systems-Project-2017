@@ -38,6 +38,10 @@
     {
       $errors['errors']['name'] = "Names must be at least 2 characters in length.";
     }
+    elseif (strlen($name) > 50)
+    {
+      $errors['errors']['name'] = "Names can't be greater than 50 characters.";   
+    }
     elseif (!validateName($name))
     {
       $errors['errors']['name'] = "Names can only consist of letters, spaces, periods and hyphens.";
@@ -68,6 +72,10 @@
     else if (strlen($subject) < 5)
     {
       $errors['errors']['subject'] = "Subject must be at least 5 characters in length.";
+    }
+    else if (strlen($subject) > 20)
+    {
+      $errors['errors']['subject'] = "Subject can't be greater than 20 characters.";
     }
     
     //Displays errors if array isn't empty
