@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Grizzle Heating and Air LLC is committed to the quality service of
    your heating and air conditioning system and all accompanying warranties. Give us a call at 770-361-2062!">
-  <meta name="keywords" content="Grizzle,Heating,Air,Installation">
+  <meta name="keywords" content="Grizzle,Heating,Air,Installation,Jasper,Canton,Ballground,Woodstock,Marietta,Ellijay">
   <link rel=icon href="Symbol2.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="GrizzleCSS.css">
@@ -19,80 +19,119 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <!-- Nav Bar -->
+
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+
+  
+  
     <div class="navbar-header">
+    
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
+                                
       </button>
+      
     </div>
+    
     <div class="collapse navbar-collapse" id="myNavbar">
+    
       <ul class="nav navbar-nav navbar-center">
+      
          <li><a href="#home">HOME</a></li>
         <li><a href="#services">SERVICES</a></li>
 	<li><a href="#agreement">MAINTENANCE AGREEMENT</a></li>
 	<li><a href="#about">ABOUT US</a></li>
 	<li><a href="#reviews">REVIEWS</a></li>
         <li><a href="#contact">CONTACT US</a></li>
+        
       </ul>
+      
     </div>
-  </div>
+    
+  
+  
 </nav>
 
 <!-- Container (Header) -->
+
 <div id="home" class="jumbotron text-center">
-	<div class="row">
-    <div class="col-sm-4 col-md-offset-1">
-		<img src="NewLogo.png" class="img-responsive" style="width:100%; height: auto;" alt="Image">
+
+   <div class="row">
+   
+   <div class ="wrapper">
+   
+    <div id="one">
+      
+	<img src="NewLogo.png" class="img-responsive" style="width:100%; height: auto;" alt="Image">
+	
 	</div>
-	<div class="col-sm-4 col-sml-offset-0">
-	<br>
+	
+	<div id="two">
+	
+	<h1 id="phone1" style="color: #404040; font-family: Impact; font-size: 5.5vw;">770.361.2062</h1>
+		
 	</div>
-	<div class="col-sm-4 col-md-offset-1">
-		<h1 style="color: #404040; font-family: Impact; font-size: 6.5vw;">770.361.2062</h1>
-	</div>
-	</div>
+	
+    </div>
+    
 </div>
 
-<p class="header6" style="color: #fff; background-color: #12C5FC;">
-				Weekend & Evening Service -- No Additional Cost -- CALL TODAY<p>
+</div>
+
+<div class="header6" style="color: #fff; background-color: #12C5FC;">
+				Weekend & Evening Service -- No Additional Cost -- CALL&nbsp;TODAY</div>
 
 <!-- Container (Carousel Section) -->
+
 <div class="slideshow">
 
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  
     <!-- Indicators -->
     <ol class="carousel-indicators">
+    
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
+    
       <div class="item active">
          <img src="House1.jpg" class="img-responsive" style="width:100%" alt="Image">
       </div>
+      
       <div class="item">
         <img src="House2.jpg" class="img-responsive" style="width:100%" alt="Image">
       </div>
+      
       <div class="item">
         <img src="House3.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
+      </div>
 	
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
+      
     </a>
+    
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
+      
     </a>
+    
+    </div>
+  
   </div>
-</div>
+
 </div>
 
 
@@ -106,11 +145,11 @@
 
 	    <hr>
 
-		<p>Grizzle Heating and Air earned a positive reputation by doing jobs
-		right the first time. Our goal is to earn your trust and maintain a lasting,
-		long-term relationship with our clients. We offer upfront pricing with no
-		hidden fees and emergency services. We look forward to making you
-		comfortable year round!</p>
+		<p>Grizzle Heating and Air earned its great reputation by doing jobs
+		right the first time. Our&nbsp;goal is to earn your trust and maintain a lasting,
+		long-term relationship with our clients. We offer emergency servicing, upfront 
+		pricing and no hidden fees. We look forward to making you
+		comfortable all year round!</p>
 
 	     <hr>
 				  
@@ -125,55 +164,77 @@
 </div>
 
 <!-- Container (Services Section) -->
+
 <div id="services" class="services">
+
 	<div class="services2">
+	
 	     <div class="container-fluid">
 
 		<h1 class="header" style="color: #FFFFFF; text-align: center;">SERVICES</h1>
 
-		<div class="floating-box-container">
+		    <div class="floating-box-container">
+		
 			<div class="services-floating box1 slideanim">
 
 			  <h3 class="header3">Heating and Air Conditioning Service</h3>
-			  A highly trained and experienced, uniformed professional will
+			  A highly trained and experienced uniformed professional will
 			  arrive equipped with the tools, diagnostic equipment, and range
 			  of replacement parts to accurately assess and solve your heating
-			  and air condition issues. With an accurate analysis of your cooling
-			  equipment, we provide honest and cost-effective recommendations.
+			  and air conditioning issues. With an accurate analysis of your cooling
+			  equipment, we provide honest and cost-effective solutions.
 
 			</div>
+			
 			<div class="services-floating box2 slideanim">
+			
 			  <h3 class="header3">Heating and Air Conditioning Replacements</h3>
 			  The installation of a new heating and air conditioning system
 			  can be overwhelming and stressful.When you rely on Grizzle Heating and Air
-			  for recommendations, and installation services, we help to eliminate the risk.
+			  for recommendations and installation services, we help to eliminate the risk.
 			  We guarantee all of our installation services for one full year.
+			  
 			</div>
+			
 			<div class="services-floating box3 slideanim">
+			
 			  <h3 class="header3">Ductless Mini Split Installation and Service</h3>
 			  A ductless mini split system provides efficient heating and cooling without
 			  major disruptions. Lightweight and stylish, ductless systems can be incorporated
-			  into just about any space. Ductless systems offer a wide range of versatility.
-			  Whether for a single room or multiple room application,
+			  into just about any space. These&nbsp;systems offer a wide range of versatility;
+			  whether for a single room or multiple room application,
 			  Mini Splits operate quietly and efficiently keeping energy costs low.
+			  
 			</div>
+			
 			<div class="services-floating box4 slideanim">
+			
 				<img src="HVAC3.jpg" class="img-responsive" style="width:100%; height: auto;" alt="Image">
+				
 			</div>
+			
 			<div class="services-floating box5 slideanim">
+			
 				<img src="HVAC4.jpg" class="img-responsive" style="width:100%; height: auto;" alt="Image">
+				
 			</div>
+			
 			<div class="services-floating box6 slideanim">
+			
                                 <img src="MiniSplit1.jpg" class="img-responsive" style="width:100%; height: auto;" alt="Image">
-                        </div>
-		</div>
-</div>
-</div>
+                                
+                       </div>
+		  </div>
+            </div>
+     </div>
 </div>
 
 <!-- Container (Maintenace Agreement Section) -->
+
 <div id="agreement" class="agreement">
+
 	<div class="agreement2">
+	
 		<div class="container-fluid">
 
 			<h1 class="header" style="color: #FFFFFF; text-align: center;">MAINTENANCE AGREEMENT</h1>
@@ -187,14 +248,14 @@
 				Grizzle Heating and Air LLC is committed to the quality service of your heating and air 
 				conditioning system and all accompanying warranties. Our Preferred Customer Plan helps 
 				to preserve your system and its warranties. Regular maintenance of your heating and air 
-				conditioning system maintains the energy efficiency and reduces your costs in the long run.
+				conditioning system maintains its energy efficiency and reduces your costs in the long run.
 				
 			
                                 <h2 class="header5" style="color: #FFFFFF;" >Preferred Customers Receive:</h2>
                                 
 
 				
-				•	Priority scheduling for any service needs throughout the year <br>
+				•	Priority scheduling for&nbsp;any service needs throughout&nbsp;the&nbsp;year <br>
 					•	10% discount on service repairs <br>
 					•	Reduced diagnostic fee on service calls <br>
 			
@@ -210,9 +271,9 @@
 				        One fall visit per year to clean and check your furnace: <br>
 					<ul style="list-style-type:square">
 						<li>Multipoint inspection </li>
-						<li>Burner assembly cleaning (pulling blower assembly is extra) </li>
+						<li>Burner assembly cleaning <br>(pulling blower assembly is extra) </li>
 						<li>Checking the unit performance and efficiency </li>
-						<li>Inspecting the mechanical components for wear </li>
+						<li>Inspecting mechanical components for wear </li>
 						<li>Free 1” filter replacement (standard sizes) </li>
 					</ul>
 
@@ -226,13 +287,14 @@
 				
 				<br>
 				
-					One spring visit per year to clean and check your air conditioner: <br>
+					One spring visit per year to clean and check&nbsp;your&nbsp;air&nbsp;conditioner: <br>
+					
 					<ul style="list-style-type:square">
 						<li>Multipoint inspection </li>
-						<li>Water wash of condensing unit (pulling or evaluating evaporative coils are extra) </li>
+						<li>Water wash of condensing unit<br>(pulling or evaluating evaporative coils&nbsp;are&nbsp;extra) </li>
 						<li>Checking all pressures and refrigerant levels </li>
-						<li>Checking the unit performance and efficiency </li>
-						<li>Inspecting the mechanical components for wear </li>
+						<li>Checking the unit's performance and efficiency </li>
+						<li>Inspecting mechanical components for wear </li>
 						<li>Free 1” filter replacement (standard sizes) </li>
 					</ul>
 			
@@ -244,49 +306,63 @@
 
 
 <!-- Container (About Section #2) -->
+
 <div id="about" class="about">
+
 	<div class="container-fluid">
 	
 			<h1 class="header" style="color: #12C5FC; text-align: center;">ABOUT US</h1>
 		
 			<div class="about2">
+			
 				<hr>
-				<p>As a family owned and operated business, Grizzle Heating and Air LLC
+				<p>As a family owned and operated business, Grizzle&nbsp;Heating&nbsp;and&nbsp;Air&nbsp;LLC
 				  has been proudly providing professional heating and cooling services to
 				  homeowners and businesses throughout the I-575 corridor. Our technicians are highly qualified
-				  and trained to ensure every job is done right. From new equipment installations,
-				  to regular maintenance and emergency repairs, we have you covered.
+				  and trained to ensure every job is done right. New equipment installations,
+				  regular maintenance, emergency repairs, and everything in between; we have you covered.
 				  Grizzle Heating and Air LLC is the HVAC company you can count on.</p>
 				<hr>
 
 <h2 class="header2" style="color: #fff; background-color: #12C5FC; font-family: IMPACT;">
 				JASPER, CANTON, BALLGROUND, WOODSTOCK, MARIETTA, ELLIJAY, & MORE</h2>
 				
-			</div> 
+	             </div> 
 	</div>
 </div>
 
 <!-- Container (Customer Reviews Section) -->
+
 <div id="reviews" class="reviews">
+
 	<div class="container-fluid text-center">
 	
 		<h1 class="header" style="color: #FF0000; text-align: center;">REVIEWS</h1>
 
                         <div class="testimonial">
+                        
                          <hr>
 				  <h4 style=" font-size:5vmax; font-size: 3vmin; font-style: italic;">“We recently had Grizzle Heating and Air replace one of our air conditioning system.  I'd highly recommend giving them a call if you ever need heating and air services. Very reasonably priced, professional employees, prompt, and honest.”<br><br><span  class="client-name" style=" font-size:6vmax; font-size: 4vmin;">Timothy M.</span></h4>
+				  
 			</div>
+			
 			<hr>
+			
 			<div class="testimonial">
+			
 				  <h4 style=" font-size:5vmax; font-size: 3vmin; font-style: italic;">“Grizzle Heating and Air came out and replaced the heat pump in our attic in one day,
 				  with no hassle or mess. We would recommend them to anyone.”<br><br><span class="client-name" style=" font-size:6vmax; font-size: 4vmin;">Samuel C.</span></h4>
 			</div>
+			
 			<hr>
+			
 			<div class="testimonial">
+			
 				  <h4 style=" font-size:5vmax; font-size: 3vmin; font-style: italic;">“We had Grizzle Heating and Air quote a replacement for our failing heating and air system.
 				  Tommy explained everything thoroughly and gave us a much better price than the other guys.
 				  A beautiful installation and works great!”<br><br><span class="client-name" style=" font-size:6vmax; font-size: 4vmin;">J. Brown</span></h4>
 			</div>
+			
 			<hr>
  
 	</div>
@@ -294,84 +370,132 @@
 
 
 <!-- Container (Contact Section) -->
+
 <div id="contact" class="contact">
+
 <div class="container-fluid">
 
   <h1 class="header" style="color: #FFFFFF; text-align: center;">CONTACT US</h1><br>
 
   <div class="row">
+  
     <div class="col-sm-5" style=" font-size:4vmax; font-size:2vmin;">
+    
       <p style="font-size: 2.5vmax; font-size: 2.5vmin;">For more information regarding an appointment or questions, please contact:</p>
-      <p style="font-size: 2.5vmax; font-size: 2.5vmin;"><span class="glyphicon glyphicon-map-marker"></span>   86 Mountain Ivy Court. Jasper, GA 30143</p>
+      <p style="font-size: 2.5vmax; font-size: 2.5vmin;"><span class="glyphicon glyphicon-map-marker"></span>   86 Mountain Ivy Court Jasper, GA 30143</p>
       <p style="font-size: 2.5vmax; font-size: 2.5vmin;"><span class="glyphicon glyphicon-phone"></span>   770.361.2062</p>
       <p style="font-size: 2.5vmax; font-size: 2.5vmin;"><span class="glyphicon glyphicon-envelope"></span>   tommy@grizzleair.net</p>
 
-<img src="NewLogo2.png" class="img-responsive" style="width: auto; height: auto;" alt="Image"><br><br>
+       <img src="NewLogo2.png" class="img-responsive" style="width: auto; height: auto;" alt="Image"><br><br>
 
     </div>
 
      <div class="col-sm-7 slideanim">
-      <div class="row">
-      <form  method="post" name="contact-form" id="contact-form">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
+     
+     <div class="row">
+     
+     <form method="post" name="contact-form" id="contact-form">
+     
+     <div class="col-sm-6 form-group">
+     
+     <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+     
+        
+     </div>
+     
+     <div class="col-sm-6 form-group">
+        
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-		<div class="col-sm-6 form-group">
+          
+     </div>
+     
+     <div class="col-sm-6 form-group">
+		
           <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text" required>
-        </div>
-		<div class="col-sm-6 form-group">
+          
+     </div>
+     
+     <div class="col-sm-6 form-group">
+		
           <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" required>
-        </div>
-        <div class="col-sm-12 form-group">
+          
+     </div>
+        
+     <div class="col-sm-12 form-group">
+        
           <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea><br>
-        </div>
+          
+    </div>
+        
 		 </form>
-      </div>
+		 
+    </div>
 
-      <div class="row">
-        <div class="col-sm-12 form-group">
+    <div class="row">
+      
+    <div class="col-sm-12 form-group">
+        
           <button class="btn btn-default pull-right" id="submit" type="submit">Send</button>
         
+            </div>
+            
         </div>
+        
       </div>
+      
     </div>
+    
   </div>
-</div>
+  
 </div>
 
 
 <!-- Container (Footer Section) -->
+
 <footer class="container-fluid text-center">
+
   <a href="#myPage" title="To Top">
+  
     <span class="glyphicon glyphicon-chevron-up"></span>
+    
   </a>
+  
 </footer>
 
+
 <script>
+
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
+  
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  
     // Make sure this.hash has a value before overriding default behavior
+    
     if (this.hash !== "") {
+    
       // Prevent default anchor click behavior
+      
       event.preventDefault();
 
       // Store hash
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
+      
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
+        
         window.location.hash = hash;
       });
+      
     } // End if
+    
   });
   
   $(window).scroll(function() {
@@ -385,6 +509,7 @@ $(document).ready(function(){
     });
   });
 })
+
 </script>
 
 <script src="SubmitForm.js"></script>
