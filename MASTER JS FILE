@@ -40,7 +40,7 @@ $(function() {
           submit.before(successMsg);
 
           //Fade the success message out
-          successMsg.fadeOut(10000, "linear");
+          successMsg.fadeOut(15000, "linear");
           
           //Reset form fields
           contactForm.trigger('reset');
