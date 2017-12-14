@@ -1,5 +1,11 @@
 <?php
-  require_once("db_connect.php");
+  // Import PHPMailer classes into the global namespace
+  // These must be at the top of your script, not inside a function
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\Exception;
+
+  //Load composer's autoloader
+  require_once("vendor/autoload.php");
   
   //Check if form was submitted
   if ($_SERVER['REQUEST_METHOD'] == "POST")
@@ -9,7 +15,8 @@
     $phone = $_POST['phone'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
-    $testEmail = "alexdevontetaylor@gmail.com";
+
+    $recipientEmail = "tommy@grizzleair.net";
     
     //Intialize errrors array
     $errors['errors'] = array();
@@ -35,6 +42,7 @@
     {
       $errors['errors']['name'] = "Names can only consist of letters, spaces, periods and hyphens.";
     }
+	
     if (empty($email))
     {
       $errors['errors']['email'] = "Email can't be empty.";
@@ -43,6 +51,7 @@
     {
       $errors['errors']['email'] = "Email address is invalid. Please enter a valid address e.g, 'example@email.com'.";
     }
+	
     if (empty($phone))
     {
       $errors['errors']['phone'] = "Phone can't be empty";
@@ -51,6 +60,7 @@
     {
       $errors['errors']['phone'] = "Phone number is invalid. Please enter a valid number e.g, '000-000-0000' or '0000000000'.";
     }
+	
     if (empty($subject))
     {
       $errors['errors']['subject'] = "Subject can't be empty.";
@@ -67,47 +77,62 @@
       exit;
     }
     
-    //Insert the data into the database
     try
-    {
-      $query = $connection->prepare("INSERT INTO inquiry (name, email, phone, subject, message, date_submitted)
-                                  VALUES (:name, :email, :phone, :subject, :message, NOW())");
-    
-      $query->execute(array("name" => $name, "email" => $email, "phone" => $phone, "subject" => $subject, "message" => $message));
-      
-      //Send email with inquiry information if data insert was successfully
-      $to = $testEmail;
-      $subject = "Customer Inquiry - $subject";
-      
-      $header = "From: Grizzle Heating & Air donotreply@reply.com \r\n";
-      $header .= "MIME-Version: 1.0\r\n";
-      $header .= "Content-Type: text/html; charset=UTF-8\r\n";
-      
-      $body= "<html><body>
-      <label>Name:</label> $name<br>
-      <label>Email:</label> $email<br>
-      <label>Phone:</label> $phone<br><br>
-      $message
-      </body></html>";
-      
-      
-      // mail(to, subject, body, header)
-      if (mail($to, $subject, $body, $header))
-      {
-        //echo json_encode("A confirmation email has been sent to <a href='#'>" . $testEmail . "</a>");
-        echo json_encode("Thanks for contacting us!
-                       A representative should be contacting you in the next 1 - 3 business days.");
-      }
-      else
-      {
-        echo json_encode("There was a problem sending the email");
-      }
+    { 
+       $mail = new PHPMailer(true);
+	try 
+	{  
+		//Server settings	
+		$mail->SMTPDebug  = 0;
+		$mail->SMTPSecure = "none";  
+		$mail->SMTPAuth   = false;
+		$mail->Username   = "";
+		$mail->Password   = "";
+		$mail->Host       = "relay-hosting.secureserver.net";
+		$mail->Port       = 25;                   
+
+		//DKIM Settings
+		$mail->setFrom('_mainaccount@grizzleair.net', 'Grizzleair.net');
+		$mail->DKIM_domain = 'grizzleair.net';
+		$mail->DKIM_private = 'private.key';
+		$mail->DKIM_selector = '1512575398.grizzleair'; //Prefix for the DKIM selector
+		$mail->DKIM_passphrase = ''; //leave blank if no Passphrase
+		$mail->DKIM_identity = $mail->From;
+
+		//Recipients
+		$mail->addAddress($recipientEmail);
+		//$mail->addReplyTo($email);
+
+		//Content
+		$mail->isHTML(true);
+		$mail->Subject = "Customer Inquiry - $subject";
+		$mail->Body = "<html><body><h1>Customer Information</h1><hr><br>
+						<b>Name: </b>$name<br>
+						<b>Email: </b>$email<br>
+						<b>Phone: </b>$phone<hr><br>
+						$message</body></html>";
+
+		//Plain text message for non HTML clients		
+		$mail->AltBody = "Customer Information\n
+						  Name: $name\n
+						  Email: $email\n
+						  Phone: $phone\n\n
+						  $message";
+		$mail->send();
+
+		echo json_encode("Thanks for contacting us! A representative should be contacting you in the next 1 - 3 business days.");
+	}
+	catch (Exception $e)
+	{
+	  echo json_encode('There was a problem sending your message. Please try again later.');
+	  //echo json_encode('Mailer Error: ' . $mail->ErrorInfo);
+	}
+       
     }
     catch (PDOException $e)
     {
       echo $e->getMessage();
     }
-    
   }
   
   /**
