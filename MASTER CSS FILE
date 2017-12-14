@@ -17,7 +17,7 @@ html,body
       }
       .header {
             font-size: 10vmax;
-	    font-size: 10vmin;
+	        font-size: 10vmin;
       }
       .header2 {
             font-size: 5vmax;
@@ -45,7 +45,8 @@ html,body
             font-size: 3.5vmax;
 	    font-size: 3.5vmin;
 	    text-align: center;
-            padding: 5px;   
+            padding: 5px;
+			font-weight: 600;
       }
 
 
@@ -87,15 +88,6 @@ html,body
   .slideshow {
 		background-color: #FFFFFF;
   } 
-  
-  .jumbotron {
-	  background-color: #FFFFFF;
-      color: #fff;
-      padding: 100px 75px 0px 75px;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
       color: #12C5FC;
@@ -106,6 +98,135 @@ html,body
   .carousel-indicators li.active {
       background-color: #FF0000;
   }
+  
+  /*Header Styling*/ 
+  .jumbotron.et_menu_jumbotron {
+		z-index: 99;
+	}
+
+	.jumbotron {
+	  background-color: #FFFFFF;
+          color: #fff;
+	  margin-right: auto;
+	  margin-left: auto;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  padding-top: 100px;
+	  padding-bottom: 0;
+	  margin-bottom: 30px;
+	}
+	@media (min-width: 768px) {
+	  .jumbotron {
+		width: 750px;
+	}
+	}
+	@media (min-width: 992px) {
+	  .jumbotron {
+		width: 970px;
+	}
+	}
+	@media (min-width: 1200px) {
+	  .jumbotron {
+		width: 1170px;
+	}
+	}
+	
+	.wrapper { 
+		overflow:hidden;
+	}
+
+	.wrapper div {
+		min-height: 50px;
+		padding: 10px;
+	}
+	#one {
+		background-color: #ffffff;
+		float:left; 
+		margin-right:20px;
+		width:45%;
+	}
+	#two { 
+		background-color: #ffffff;
+		overflow:hidden;
+		margin:10px;
+	}
+
+	@media screen and (max-width: 500px) {
+	 .floating-box-container  {
+            display: flex;
+            flex-direction: column;
+      }   
+      .floating-box-container > .box1 {
+            order: 1;
+            width: 100% !important;
+      }
+      .floating-box-container > .box2 {
+            order: 3;
+            width: 100% !important;
+      }
+      .floating-box-container > .box3 {
+            order: 5;
+            width: 100% !important;
+      }
+      .floating-box-container > .box4 {
+            order: 2;
+            width: 100% !important;
+      }
+      .floating-box-container > .box5 {
+            order: 4;
+            width: 100% !important;
+      }
+      .floating-box-container > .box6 {
+            order: 6;
+            width: 100% !important;
+      }
+      
+      .services-floating, .agreement-floating {
+        height: auto;
+        left: auto;
+        margin: 10px;
+        opacity: 0.75;
+        overflow: auto;
+        padding: 15px;
+        text-align: center;
+        width: auto;
+    }
+    
+    .agreement-floating {
+    margin: 15px auto;
+    	width: 100% !important;
+    }
+		#one { 
+			float: none;
+			margin: 0 auto;
+			width:80%;
+			
+  
+			}
+		#two{
+			margin: 0 10px;
+		}
+		.jumbotron{
+			padding-top: 50px;
+			margin-bottom: 2%;
+		}
+		
+		#phone1{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 10vw !important;
+		}
+		.container-fluid{
+			padding-top: 5px !important;
+			padding-bottom: 5px !important;
+		}
+	}
+	
+  /*main container for all sections*/
+  .container-fluid {
+      padding: 25px 50px 50px 50px;
+  }
+  
   
   .slideanim {visibility:hidden;}
   .slide {
@@ -246,29 +367,47 @@ html,body
       color: #FF0000;
 }
 
+
+
 /* Small screens to tablets */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1290px) {
  .floating-box-container  {
             display: flex;
             flex-direction: column;
       }   
       .floating-box-container > .box1 {
+      margin: 15px auto;
             order: 1;
+            padding: 10px;
+            width: 75%;
       }
       .floating-box-container > .box2 {
+      margin: 15px auto;
             order: 3;
+            padding: 10px;
+            width: 75%;
       }
       .floating-box-container > .box3 {
+      margin: 15px auto;
             order: 5;
+            padding: 10px;
+            width: 75%;
       }
       .floating-box-container > .box4 {
+      margin: 15px auto;
             order: 2;
+            padding: 10px;
+            width: 45%;
       }
       .floating-box-container > .box5 {
+      margin: 15px auto;
             order: 4;
+            width: 45%;
       }
       .floating-box-container > .box6 {
+      margin: 15px auto;
             order: 6;
+            width: 45%;
       }
       
       .services-floating, .agreement-floating {
@@ -283,9 +422,13 @@ html,body
     }
     
     .agreement-floating {
-    	width: 100%;
+	width: 100%;
     }
 }
+
+
+
+
 
 
 /* Medium to large screens */
